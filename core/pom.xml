@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>cn.maxpixel</groupId>
+		<artifactId>simplog</artifactId>
+		<version>0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>simplog-core</artifactId>
+	<name>Simple Logging - Core</name>
+	<description>Core of the logging service.</description>
+
+	<properties>
+		<moduleId>simplog.core</moduleId>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.fusesource.jansi</groupId>
+			<artifactId>jansi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>it.unimi.dsi</groupId>
+			<artifactId>fastutil</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openjdk.jmh</groupId>
+			<artifactId>jmh-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openjdk.jmh</groupId>
+			<artifactId>jmh-generator-annprocess</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin><artifactId>maven-clean-plugin</artifactId></plugin>
+			<plugin><artifactId>maven-compiler-plugin</artifactId></plugin>
+			<plugin><artifactId>maven-source-plugin</artifactId></plugin>
+			<plugin><artifactId>maven-javadoc-plugin</artifactId></plugin>
+			<plugin><artifactId>maven-surefire-plugin</artifactId></plugin>
+			<plugin><artifactId>maven-deploy-plugin</artifactId></plugin>
+		</plugins>
+	</build>
+</project>
